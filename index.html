@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mi CV Online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+</head>
+<body> 
+    <header>
+        <img src="" alt="Foto de perfil" id="foto">
+        <h1><span id="nombre"></span> <span id="apellido"></span> </h1>
+        <nav>
+            <ul>
+            <li><a href="#divInicio">Inicio</a></li>
+            <li><a href="#divHabilidades" >Habilidades</a></li>
+            <li><a href="#divExperiencias">Experiencias</a></li>          
+            <li><a href="#divContacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+      
+        <div class="divInicio" id="divInicio">
+            <div id="inicio">
+                <h2 >Hola, soy <span id="nombre2"></span> <span id="apellido2"></span>.</h2>
+                <p> <b>Me encuentro formando mi camino para profesionalizarme como Web Designer.<br>
+                   Amante de la música, los viajes, la naturaleza y los animales. <br>              
+                   He trabajado en diferentes rubros a lo largo de mi vida laboral pero durante la pandemia decidí comenzar a estudiar algo que me diera la
+                   posibilidad de trabajar desde cualquier lugar del mundo, permitiendome además, disfrutar de lo que más me gusta.
+                </b></p>
+            </div>
+
+            <div id="imgInicio" >
+            <img src="montaña.jpg" alt="montana">
+            </div>
+        </div>
+    
+
+    <div class="divHabilidades" id="divHabilidades">
+        <div id="imgHabilidades" >
+            <img src="viajes.jpg" alt="mapa">
+        </div>
+        <div id="habilidades">
+        <h2 id="h2Habilidades">Habilidades</h2>
+    <ul id="ulHabilidades">
+       <b><li><u>Aptitudes</u></li>
+            <ul>
+                <li>Comunicación efectiva.</li>
+                <li>Atención al cliente.</li>
+                <li>Trabajo en equipo.</li>
+                <li>Resolución de problemas.</li>
+                <li>Iniciativa.</li>
+            </ul>
+        <li><u>Habilidades informáticas</u></li>
+             <ul>
+                <li>Excelente manejo de PC</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+             </ul>
+        <li><u>Idiomas</u></li>
+            <ul>
+                <li>Inglés</li>
+                <li>Francés</li>
+            </ul> </b> 
+    </ul>
+</div>
+</div>
+
+    <div class="divExperiencias" id="divExperiencias">
+    <h2 id="h2Experiencias">Experiencias</h2>
+    <ul id="ulExperiencias">
+       <b> <li><u>Customer Success Manager en Urex Medios de pago - Mayo de 2020 a la actualidad.</u></li>
+            <ul>
+                <li>Atención personalizada a comercios usuarios del servicio de pagos.</li>
+                <li>Gestión de reclamos de usuarios.</li>
+                <li>Asistencia, soporte y capacitación a usuarios de la aplicación.</li>
+            </ul>
+        <li><u>Responsable de Atención al Cliente en Seguros Allianz - Septiembre de 2018 a Abril de 2020.</u> </li>
+            <ul>
+                <li>Gestión de consultas y resolución de incidencias.</li>
+                <li>Atención telefónica al cliente y trámite de las solicitudes de información y consultas realizadas a través de internet.</li>
+                <li>Coordinación y gestión de las diferentes comunicaciones con los clientes para trasladarles información de promociones y nuevos servicios.</li>
+            </ul>
+        <li><u>Agente de Call Center en Iberia - Octubre de 2015 - Agosto de 2018. </u></li>
+            <ul>
+                <li>Recepción de llamadas y gestión de consultas efectuadas por los usuarios de los servicios de la empresa.</li>
+                <li>Resolución de incidencias relacionadas con reservas, modificaciones horarias de los vuelos o cancelaciones.</li>
+                <li>Coordinación de llamadas y envío de formularios a los usuarios y clientes de la empresa para evaluar el grado de satisfacción y calidad.</li>
+            </ul>
+        <li><u>Auxiliar administrativo en Elecnor - Mayo de 2013 - Septiembre de 2015.</u></li>
+             <ul>
+                <li>Comunicación telefónica y escrita con clientes de forma diaria.</li>
+                <li>Gestión de la negociación y comunicación con proveedores de forma mensual.</li>
+                <li>Tramitación de documentos y comunicaciones internas en los circuitos de información de la empresa.</li>
+                <li>Actualización constante de los procedimientos, guías y manuales corporativos.</li>
+            </ul></b>
+    </ul>    
+    <div id="imgExperiencias">
+        <img src="colibri.jpg" alt="colibri">
+        </div>
+
+</div>
+
+<div class="divContacto" id="divContacto">
+    <div>
+  <h2 id="h2Contacto">Datos de contacto</h2>
+  <b><ul id="ulContacto">
+        <li><u>Dirección:</u> 8929, St. Lawrence Ave, Burlington, Canada.</li>
+        <li><u>Email:</u> <span id="email"></span></li>
+        <li><u>Teléfono:</u> <span id="telefono"></span></li>
+    </ul></b>
+</div>
+<div>
+    <form action="" method="get" target="_blank" > <!-- un dev backend puede agregar valor a action y cambiar method a post -->
+       <b> <label>Nombre</label>
+        <input type="text" name="nombre" placeholder="Ingrese su nombre" required/>
+        <label>Apellido</label>
+        <input type="text" name="apellido" placeholder="Ingrese su apellido" required/>
+        <label>E-mail</label>
+        <input type="email" name="email" placeholder="Ingrese su E-mail" required/>
+       
+        <label>Dejame tu mensaje 💜</label>
+        <textarea name="message" rows="10" cols="30" style="width: 655px; height: 83px;"> </textarea>
+        <input type="submit" value="Enviar" style="width: 200px; height: 50px;" />
+    </b>
+    </form>
+</div>
+</div>
+
+</main>
+
+<footer>
+    <div class="footer">Página diseñada por Constanza Percudani - @cotipee</div>
+</footer>
+
+ <script src="app.js"></script>
+
+</body>
+</html>
