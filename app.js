@@ -35,3 +35,26 @@ const datosCv = async () => {
 }
 
 document.addEventListener("DOMContentLoaded", datosCv);
+
+
+const btnEnviar = document.getElementById('btn-enviar');
+
+const validacion = (e) => {
+  e.preventDefault();
+  const nombreDeUsuario = document.getElementById('nombreContacto');
+  const direcciónEmail = document.getElementById('emailContacto');
+  if (nombreContacto.value === "") {
+    alert("Por favor, escribe tu nombre.");
+    nombreContacto.focus();
+    return false;
+  }
+  if (emailContacto.value === "") {
+    alert("Por favor, escribe tu correo electrónico");
+    emailContacto.focus();
+    return false;
+  }
+  
+  return true;
+}
+
+submitBtn.addEventListener('click', validate);
